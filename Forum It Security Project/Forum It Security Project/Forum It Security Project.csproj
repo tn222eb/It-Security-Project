@@ -115,6 +115,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model\Comment.cs" />
+    <Compile Include="Model\DAL\LoggingDAL.cs" />
+    <Compile Include="Model\DAL\MemberDAL.cs" />
+    <Compile Include="Model\DAL\ThreadDAL.cs" />
+    <Compile Include="Model\Member.cs" />
+    <Compile Include="Model\Service.cs" />
+    <Compile Include="Model\Thread.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
