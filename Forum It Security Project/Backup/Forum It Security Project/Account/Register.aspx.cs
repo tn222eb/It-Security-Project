@@ -10,7 +10,7 @@ namespace Forum_It_Security_Project.Account
 {
     public partial class Register : System.Web.UI.Page
     {
-        private const string ValidationGroup = "RegisterValidation";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             RegisterUser.ContinueDestinationPageUrl = Request.QueryString["ReturnUrl"];
@@ -28,29 +28,5 @@ namespace Forum_It_Security_Project.Account
             Response.Redirect(continueUrl);
         }
 
-        protected void RegisterButton_OnClick(object sender, EventArgs e)
-        {
-            string userName = Username.Text;
-            string password = Password.Text;
-            string confirmPassword = ConfirmPassword.Text;
-
-
-            if (password == confirmPassword)
-            {
-                try
-                {
-                    // TODO:: conect to the service
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
-            }
-            else
-            {
-                //THROW NEW ARGUMETN EX.
-            }
-
-        }
     }
 }
